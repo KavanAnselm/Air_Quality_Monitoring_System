@@ -11,6 +11,7 @@ Visual alerts on LCD display and push notifications via the Blynk app.
 Suitable for indoor environments like homes, offices, or labs.
 
 **Technologies Used:**
+
 Hardware: ESP8266, MQ135, DHT11, LCD Display with I2C, Breadboard
 
 Software: Arduino IDE, Blynk IoT Platform, C/C++ (Arduino)
