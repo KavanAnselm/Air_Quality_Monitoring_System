@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL32PUoWGuj"
-#define BLYNK_TEMPLATE_NAME "Air Quality Monitor"
-#define BLYNK_AUTH_TOKEN "R-51nIOgxdEG4QqQHReU_yH3WogVd2EE"
+#define BLYNK_TEMPLATE_ID "*************"  //Your Blynk Template ID
+#define BLYNK_TEMPLATE_NAME "Air Quality Monitor"  //Your Blynk Template Name
+#define BLYNK_AUTH_TOKEN "*****************************"  //Your Blynk Authentication Token
 
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
@@ -23,8 +23,8 @@ byte degree_symbol[8] = {
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
-char ssid[] = "Airtel_Pepper";  // Your Wi-Fi name
-char pass[] = "Bible12345#";    // Your Wi-Fi password
+char ssid[] = "*********";  // Your Wi-Fi name
+char pass[] = "*********";    // Your Wi-Fi password
 
 BlynkTimer timer;
 
@@ -124,7 +124,7 @@ void loop() {
 
   if (gasValue > 600) {
     // Uncomment and configure email notifications if needed
-    // Blynk.email("kavananselm@gmail.com", "Alert", "Poor Air!");
+    Blynk.email("youremail@gmail.com", "Alert", "Poor Air!");
     Blynk.logEvent("air_quality", "Poor Air");
   }
 }
